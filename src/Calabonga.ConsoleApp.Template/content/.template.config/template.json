@@ -4,7 +4,7 @@
     "classifications": [
         "Common",
         "Console",
-        "Winsows",
+        "Windows",
         "C#"
     ],
     "name": "Console App Extended",
@@ -16,7 +16,6 @@
         "type": "solution"
     },
     "sourceName": "Calabonga.ConsoleApp",
-    "preferNameDirectory": true,
     "symbols": {
         "Framework": {
             "type": "parameter",
