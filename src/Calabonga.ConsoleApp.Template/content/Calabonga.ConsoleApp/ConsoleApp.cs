@@ -30,10 +30,7 @@ public static class ConsoleApp
             .WriteTo.Console()
             .CreateLogger();
 
-        services.AddLogging(x =>
-        {
-            x.AddSerilog(logger);
-        });
+        services.AddLogging(x => x.AddSerilog(logger));
 
         services.Configure<AppSettings>(x => configuration.GetSection(nameof(AppSettings)).Bind(x));
 
@@ -41,7 +38,7 @@ public static class ConsoleApp
     }
 
     /// <summary>
-    /// Show some demo how to use 
+    /// Show some demo how to use container
     /// </summary>
     /// <param name="container"></param>
     public static void ShowDemo(ServiceProvider container)
