@@ -13,7 +13,7 @@
     "shortName": "consolex",
     "tags": {
         "language": "C#",
-        "type": "solution"
+        "type": "project"
     },
     "sourceName": "Calabonga.ConsoleApp",
     "symbols": {
