@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Calabonga SOFT",
+    "classifications": [
+        "Common",
+        "Console",
+        "Winsows",
+        "C#"
+    ],
+    "name": "Console App Extended",
+    "description": "Custom Template Console Application with some integrated features: DI, Serilog, Logging and other helpful features.",
+    "identity": "Calabonga.ConsoleApp",
+    "shortName": "consolex",
+    "tags": {
+        "language": "C#",
+        "type": "solution"
+    },
+    "sourceName": "Calabonga.ConsoleApp",
+    "preferNameDirectory": true,
+    "symbols": {
+        "Framework": {
+            "type": "parameter",
+            "description": "The target framework for the project.",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "net9.0"
+                }
+            ],
+            "defaultValue": "net9.0"
+        }
+    },
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "exclude": [
+                        ".vs/**",
+                        ".idea/**",
+                        "_ReSharper.Caches/**",
+                        ".template_config/**"
+                    ]
+                }
+            ]
+        }
+    ]
+}
