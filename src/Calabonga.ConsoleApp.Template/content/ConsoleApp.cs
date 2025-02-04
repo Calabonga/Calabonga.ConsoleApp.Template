@@ -1,12 +1,4 @@
-﻿using DotNetEnv;
-using DotNetEnv.Configuration;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Serilog;
-
-namespace Calabonga.ConsoleApp;
+﻿namespace Calabonga.ConsoleApp;
 
 /// <summary>
 /// Create Container for Console App
@@ -17,7 +9,7 @@ public static class ConsoleApp
     /// Creates container <see cref="ServiceCollection"/>
     /// </summary>
     /// <returns></returns>
-    public static ServiceProvider CreateContainer()
+    public static ServiceProvider CreateContainer(Action<IServiceCollection>? additionalServices = null)
     {
         var services = new ServiceCollection();
 
@@ -33,6 +25,8 @@ public static class ConsoleApp
         services.AddLogging(x => x.AddSerilog(logger));
 
         services.Configure<AppSettings>(x => configuration.GetSection(nameof(AppSettings)).Bind(x));
+
+        additionalServices?.Invoke(services);
 
         return services.BuildServiceProvider();
     }

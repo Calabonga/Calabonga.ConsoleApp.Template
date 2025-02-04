@@ -1,7 +1,8 @@
-﻿using Calabonga.ConsoleApp;
-
-// container
-var container = ConsoleApp.CreateContainer();
+﻿// container
+var container = ConsoleApp.CreateContainer(services =>
+{
+    //services.AddTransient<ISomeService, SomeService>();
+});
 
 // demo
 ConsoleApp.ShowDemo(container);
