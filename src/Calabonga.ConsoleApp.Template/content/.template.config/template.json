@@ -15,6 +15,7 @@
         "language": "C#",
         "type": "project"
     },
+    "defaultName": "Calabonga.ConsoleApp1",
     "sourceName": "Calabonga.ConsoleApp",
     "symbols": {
         "Framework": {
