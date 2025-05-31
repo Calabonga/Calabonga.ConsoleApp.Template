@@ -1,4 +1,12 @@
-﻿namespace Calabonga.ConsoleApp;
+﻿using DotNetEnv;
+using DotNetEnv.Configuration;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using Serilog;
+
+namespace Calabonga.ConsoleApp;
 
 /// <summary>
 /// Create Container for Console App
