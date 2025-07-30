@@ -1,5 +1,6 @@
 ﻿using DotNetEnv;
 using DotNetEnv.Configuration;
+using Dumpify;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -61,5 +62,9 @@ public static class ConsoleApp
 
         logger.LogInformation("DEMO_APPLICATION_TYPE: {0}", Environment.GetEnvironmentVariable("DEMO_APPLICATION_TYPE"));
         logger.LogInformation("DEMO_APPLICATION_VERSION: {0}", Environment.GetEnvironmentVariable("DEMO_APPLICATION_VERSION"));
+
+        // use appSettings.DumpConsole() to dump to Console or
+        // use like this:
+        Console.WriteLine(appSettings.Dump());
     }
 }
