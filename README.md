@@ -2,6 +2,11 @@
 
 Custom Template for Console Application template for Visual Studio with some integrated features: DI, Serilog, Logging, etc. You can find this package on the nuget.org [Calabonga.ConsoleApp.Template](https://www.nuget.org/packages/Calabonga.ConsoleApp.Template/).
 
+## Changes
+
+2025-11-16
+* .NET10 migrated
+
 ## How To Install
 
 Just run a command in your terminal (command prompt):
