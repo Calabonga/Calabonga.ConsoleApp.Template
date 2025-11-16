@@ -1,4 +1,4 @@
-name: Deploy package (NET9)
+name: Deploy package Calabonga.ConsoleApp.Template
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v2
         with:
-          dotnet-version: 9.0.x
+          dotnet-version: 10.0.x
 
       - name: Install dependencies
         run: dotnet restore 'src/Calabonga.ConsoleApp.Template.sln'
